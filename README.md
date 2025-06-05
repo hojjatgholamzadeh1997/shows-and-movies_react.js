@@ -36,10 +36,21 @@
       - assets
         - fonts
         - images
+          - shows
+            - breaking-bad.jpg
+            - chernobyl.jpg
+            - friends.jpg
+            - game-of-thrones.jpg
+            - sherlock.jpg
+            - the-office.jpg
           - logo.png
       - components
+        - Movie.jsx
         - MyNavbar.css
         - MyNavbar.jsx
+        - Show.jsx
+      - data
+        - data.json
       - hooks
       - pages
         - 404
