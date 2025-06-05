@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { NavLink } from "react-router-dom";
+import logo from "../assets/images/logo.png";
 
 function MyNavbar() {
   const expand = "md";
@@ -21,7 +22,7 @@ function MyNavbar() {
           >
             <Offcanvas.Header closeButton className="p-4 border-bottom">
               <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                <img src="./src/assets/images/logo.png" alt="logo" width={100} />
+                <img src={logo} alt="logo" width={100} />
                 <span className="d-block fs-6 mt-3">Shows & Movies</span>
               </Offcanvas.Title>
             </Offcanvas.Header>
