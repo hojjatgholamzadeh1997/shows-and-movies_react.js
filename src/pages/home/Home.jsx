@@ -1,4 +1,3 @@
-import Button from 'react-bootstrap/Button';
 import MyNavbar from "../../components/MyNavbar";
 
 function Home() {
@@ -6,7 +5,6 @@ function Home() {
     <>
       <MyNavbar />
       <p>Home Page</p>
-      <Button variant="primary">Primary</Button>
     </>
   );
 }

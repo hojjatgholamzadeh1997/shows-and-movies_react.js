@@ -36,6 +36,7 @@
       - assets
         - fonts
         - images
+          - logo.png
       - components
         - MyNavbar.css
         - MyNavbar.jsx

@@ -1,30 +1,35 @@
 /* MyNavbar Component Styles */
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  display: flex;
-  justify-content: center;
+.nav-link {
+  color: rgba(255, 255, 255, 0.55) !important;
+  text-align: center !important;
 }
 
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover:not(.active) {
-  background-color: #111;
+.nav-link:hover {
+  color: rgba(255, 255, 255, 1) !important;
 }
 
 .active {
-  background-color: #339AF0;
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+.navbar-toggler:hover {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.navbar-nav {
+  gap: 5px !important;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-nav {
+  gap: 20px !important;
+  }
+}
+
+.offcanvas {
+  width: 250px !important;
 }
