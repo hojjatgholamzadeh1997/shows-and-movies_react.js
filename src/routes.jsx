@@ -2,11 +2,10 @@ import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import Contact from "./pages/contact/Contact";
 import Shows from "./pages/shows/Shows";
+import Show from "./pages/show/Show";
 import Movies from "./pages/movies/Movies";
+import Movie from "./pages/movie/Movie";
 import NotFound from "./pages/404/NotFound";
-
-import Show from "./components/Show";
-import Movie from "./components/Movie";
 
 const routes = [
   { path: "/", element: <Home /> },

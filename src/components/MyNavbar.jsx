@@ -11,7 +11,7 @@ function MyNavbar() {
 
   return (
     <>
-      <Navbar expand={expand} bg="dark" data-bs-theme="dark">
+      <Navbar expand={expand} bg="dark" data-bs-theme="dark" sticky="top">
         <Container fluid>
           <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
           <Navbar.Offcanvas
