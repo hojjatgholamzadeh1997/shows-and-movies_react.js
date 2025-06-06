@@ -45,20 +45,34 @@
             - the-office.jpg
           - logo.png
       - components
-        - Movie.jsx
+        - Filter.css
+        - Filter.jsx
         - MyNavbar.css
         - MyNavbar.jsx
-        - Show.jsx
+        - Search.css
+        - Search.jsx
+        - ShowCard.css
+        - ShowCard.jsx
       - data
         - data.json
       - hooks
       - pages
         - 404
+          - NotFound.jsx
         - about
+          - About.jsx
         - contact
+          - Contact.jsx
         - home
+          - Home.jsx
+        - movie
+          - Movie.jsx
         - movies
+          - Movies.jsx
+        - show
+          - Show.jsx
         - shows
+          - Shows.jsx
       - utils
       - App.jsx
       - index.css
@@ -71,4 +85,5 @@
     - package-lock.json
     - package.json
     - README.md
+    - Tasks.txt
     - vite.config.js
