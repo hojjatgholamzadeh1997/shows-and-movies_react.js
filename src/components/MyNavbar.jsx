@@ -11,14 +11,13 @@ function MyNavbar() {
 
   return (
     <>
-      <Navbar expand={expand} bg="dark" data-bs-theme="dark" sticky="top">
+      <Navbar expand={expand} bg="dark" sticky="top" className="border-bottom">
         <Container fluid>
           <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
           <Navbar.Offcanvas
             id={`offcanvasNavbar-expand-${expand}`}
             aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
             placement="end"
-            data-bs-theme="dark"
           >
             <Offcanvas.Header closeButton className="p-4 border-bottom">
               <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>

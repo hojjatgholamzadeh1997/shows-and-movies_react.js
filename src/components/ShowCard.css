@@ -1,0 +1,25 @@
+/* ShowCard Component Styles */
+/* Card */
+.card:hover {
+  scale: 1.01 !important;
+}
+
+/* Badges */
+span.imdb-rating {
+  position: absolute !important;
+  top: 10px !important;
+  left: 10px !important;
+  padding: 10px !important;
+}
+
+span.age-rating {
+  position: absolute !important;
+  top: 10px !important;
+  right: 10px !important;
+  padding: 10px !important;
+}
+
+/* Title */
+.card-body a {
+  text-decoration: none !important;
+}
