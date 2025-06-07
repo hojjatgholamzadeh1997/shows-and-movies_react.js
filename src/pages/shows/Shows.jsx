@@ -6,7 +6,7 @@ import Search from "../../components/Search";
 import Filter from "../../components/Filter";
 import useFetch from "../../hooks/useFetch";
 import Loading from "../../components/loadings/Fetching";
-import ErrorFetching from "../../components/Errors/ErrorFetching";
+import ErrorFetching from "../../components/errors/ErrorFetching";
 
 function Shows() {
   const [searched, setSearched] = useState([]);
