@@ -1,6 +1,11 @@
 /* Filter Component Styles */
 .filter {
   border: 1px solid rgba(255, 255, 255, 0.55) !important;
+  color: rgba(255, 255, 255, 0.55) !important;
+}
+
+.filter:hover {
+  color: #000 !important;
 }
 
 .find {

@@ -1,14 +1,19 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import MyNavbar from "../../components/MyNavbar";
 import { Container, Row, Col } from "react-bootstrap";
 import ShowCard from "../../components/ShowCard";
 import Search from "../../components/Search";
 import Filter from "../../components/Filter";
+import useFetch from "../../hooks/useFetch";
+import Loading from "../../components/loadings/Fetching";
+import ErrorFetching from "../../components/Errors/ErrorFetching";
 
 function Shows() {
-  const [shows, setShows] = useState([]);
   const [searched, setSearched] = useState([]);
   const [isSearchInputEmpty, SetIsSearchInputEmpty] = useState(true);
+
+  // Fetching Data
+  const [isPending, isThereError, shows] = useFetch("https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/data/shows.json");
 
   // Search Function
   const searchInputHandler = (event) => {
@@ -26,23 +31,10 @@ function Shows() {
 
   // TEST...
   // Fiter Function
-  // const filterByCategoryHandler = (event) => {
-  //   const filteredItems = shows.filter((value) => value.categories.includes(event.target.value));
+  // const filterByGenreHandler = (event) => {
+  //   const filteredItems = shows.filter((value) => value.genres.includes(event.target.value));
   //   setShows(filteredItems);
   // };
-
-  // Fetching Data
-  useEffect(() => {
-    fetch(
-      "https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/data/data.json"
-    )
-      .then((data) => data.json())
-      .then((result) => setShows(result.shows))
-      .catch((error) => {
-        console.log("ERROR Fetching Data!");
-        console.log(error);
-      });
-  }, []);
 
   return (
     <>
@@ -54,23 +46,31 @@ function Shows() {
         <Search searchInputHandler={searchInputHandler} />
         <Filter />
       </div>
-      <Container>
-        <Row xs={1} sm={2} md={3} lg={4} className="px-3">
-          {searched.length ? (
-            searched.map((show) => (
-            <Col key={show.id} className="p-2" >
-              <ShowCard {...show} />
-            </Col>
-          ))
-          ) : (
-            isSearchInputEmpty && shows.map((show) => (
-            <Col key={show.id} className="p-2" >
-              <ShowCard {...show} />
-            </Col>
-          ))
-          )}
-        </Row>
-      </Container>
+      {isPending ? (
+        <Loading />
+      ) : (
+        isThereError ? (
+          <ErrorFetching />
+        ) : (
+          <Container>
+            <Row xs={1} sm={2} md={3} lg={4} className="px-3">
+              {searched.length ? (
+                searched.map((show) => (
+                <Col key={show.id} className="p-2" >
+                  <ShowCard {...show} />
+                </Col>
+              ))
+              ) : (
+                isSearchInputEmpty && shows.map((show) => (
+                <Col key={show.id} className="p-2" >
+                  <ShowCard {...show} />
+                </Col>
+              ))
+              )}
+            </Row>
+          </Container>
+        )
+      )}
       <br /> {/* Test */}
     </>
   );

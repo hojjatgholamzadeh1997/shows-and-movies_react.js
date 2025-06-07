@@ -11,9 +11,9 @@ function ShowCard({
   ageRating,
   title,
   description,
-  categories,
+  genres,
   downloadLink,
-  filterByCategoryHandler
+  filterByGenreHandler
 }) {
   return (
     <Card className="position-relative text-center h-100">
@@ -24,23 +24,23 @@ function ShowCard({
         <Card.Img variant="top" src={image} />
       </Link>
 
-      {/* Title & Categories & Description */}
+      {/* Title & Genres & Description */}
       <Card.Body>
         <Link to={`${id}`} className='text-light'>
           <Card.Title>{title}</Card.Title>
         </Link>
         <hr />
-        <div className="categories-container">
-          {categories.map((category, index) => (
+        <div className="genres-container">
+          {genres.map((genre, index) => (
             <Button
               key={index}
               variant="outline-light"
               size="sm"
               className="me-2 mb-2"
-              value={category}
-              onClick={(event) => {filterByCategoryHandler(event)}}
+              value={genre}
+              onClick={(event) => {filterByGenreHandler(event)}}
             >
-              {category}
+              {genre}
             </Button>
           ))}
         </div>
