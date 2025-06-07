@@ -7,34 +7,41 @@ import Filter from "../../components/Filter";
 import useFetch from "../../hooks/useFetch";
 import Loading from "../../components/loadings/Fetching";
 import ErrorFetching from "../../components/errors/ErrorFetching";
+import { TbFaceIdError } from "react-icons/tb";
 
 function Shows() {
-  const [searched, setSearched] = useState([]);
+  const [changed, setChanged] = useState([]);
+
   const [isSearchInputEmpty, SetIsSearchInputEmpty] = useState(true);
+
+  const [modalShow, setModalShow] = useState(false);
 
   // Fetching Data
   const [isPending, isThereError, shows] = useFetch("https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/data/shows.json");
 
   // Search Function
   const searchInputHandler = (event) => {
-    // Check Is Search Input Empty?
-    if (event.target.value.trimStart() === "") {
-      setSearched([]);
-      SetIsSearchInputEmpty(true);
-    } else {
-      const searchedItems = shows.filter((value) => value.title.replaceAll(" ", "").toLowerCase().includes(event.target.value.replaceAll(" ", "").toLowerCase()));
-      setSearched(searchedItems);
-      // No Results Found
-      if (searchedItems.length === 0) SetIsSearchInputEmpty(false);
-    }
+    const searchedItems = shows.filter((value) => value.title.replaceAll(" ", "").toLowerCase().includes(event.target.value.trimStart().replaceAll(" ", "").toLowerCase()));
+    setChanged(searchedItems);
+    // No Results Found
+    if (searchedItems.length === 0) SetIsSearchInputEmpty(false);
   };
 
-  // TEST...
-  // Fiter Function
-  // const filterByGenreHandler = (event) => {
-  //   const filteredItems = shows.filter((value) => value.genres.includes(event.target.value));
-  //   setShows(filteredItems);
-  // };
+  // Select By Genre Function
+  let selected = "";
+  const selectedGenre = (event) => {
+    selected = event.target.value;
+  };
+  // Filter By Genre Function
+  const filterByGenre = () => {
+    if (selected === "" || selected === "All") {
+      setChanged([]);
+    } else {
+      const selectedItems = shows.filter((value) => value.genres.includes(selected));
+      setChanged(selectedItems);
+    }
+    setModalShow(false);
+  };
 
   return (
     <>
@@ -44,7 +51,7 @@ function Shows() {
         style={{position: "sticky", top: "57px"}}
       >
         <Search searchInputHandler={searchInputHandler} />
-        <Filter />
+        <Filter selectedGenre={selectedGenre} filterByGenre={filterByGenre} modalShow={modalShow} setModalShow={setModalShow} />
       </div>
       {isPending ? (
         <Loading />
@@ -54,18 +61,28 @@ function Shows() {
         ) : (
           <Container>
             <Row xs={1} sm={2} md={3} lg={4} className="px-3">
-              {searched.length ? (
-                searched.map((show) => (
-                <Col key={show.id} className="p-2" >
-                  <ShowCard {...show} />
-                </Col>
-              ))
+              {changed.length ? (
+                changed.map((show) => (
+                  <Col key={show.id} className="p-2" >
+                    <ShowCard {...show} />
+                  </Col>
+                ))
               ) : (
-                isSearchInputEmpty && shows.map((show) => (
-                <Col key={show.id} className="p-2" >
-                  <ShowCard {...show} />
-                </Col>
-              ))
+                isSearchInputEmpty ? (
+                  shows.map((show) => ( 
+                  <Col key={show.id} className="p-2" >
+                    <ShowCard {...show} />
+                  </Col>
+                  ))
+                ) : (
+                  <div
+                    className="d-flex flex-column justify-content-center align-items-center mx-auto gap-3"
+                    style={{height: "calc(100vh - 167px)"}}
+                  >
+                    <TbFaceIdError size={50} />
+                    <span className="user-select-none">No Results Found</span>
+                  </div>
+                )
               )}
             </Row>
           </Container>

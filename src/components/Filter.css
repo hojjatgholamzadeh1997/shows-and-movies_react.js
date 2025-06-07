@@ -1,4 +1,27 @@
 /* Filter Component Styles */
+.modal-dialog {
+  width: 275px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+@media screen and (min-width: 576px) {
+  .modal-dialog {
+    max-width: none !important;
+    width:  325px !important;
+  }
+}
+
+.modal-body {
+  padding-left: 20px !important;
+}
+
+@media screen and (min-width: 576px) {
+  .modal-body {
+    padding-left: 37.5px !important;
+  }
+}
+
 .filter {
   border: 1px solid rgba(255, 255, 255, 0.55) !important;
   color: rgba(255, 255, 255, 0.55) !important;
@@ -14,4 +37,14 @@
 
 .modal-header, .modal-footer {
   border: 0 !important;
+}
+
+.form-check-input:focus {
+  box-shadow: none !important;
+  border-color: #495057 !important;
+}
+
+.form-check-input:checked {
+  background-color: transparent !important;
+  border-color: #495057 !important;
 }
