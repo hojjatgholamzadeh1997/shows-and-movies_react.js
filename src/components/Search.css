@@ -3,6 +3,11 @@
   border: 1px solid rgba(255, 255, 255, 0.55) !important;
 }
 
+.form-control:disabled {
+  background-color: transparent !important;
+  opacity: 50% !important;
+}
+
 .form-control:focus {
   border: 1px solid #fff !important;
   box-shadow: none !important;

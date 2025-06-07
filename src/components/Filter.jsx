@@ -4,7 +4,13 @@ import Button from "react-bootstrap/Button";
 import Form from 'react-bootstrap/Form';
 import { Col, Row } from "react-bootstrap";
 
-function Filter({ selectedGenre, filterByGenre, modalShow, setModalShow }) {
+function Filter({
+  selectedGenreHandler,
+  filterByGenreHandler,
+  modalShow,
+  setModalShow,
+  isFilterDisabled,
+}) {
   // Genres List
   const genres = [
     "All",
@@ -25,7 +31,12 @@ function Filter({ selectedGenre, filterByGenre, modalShow, setModalShow }) {
   return (
     <>
       {/* Filter Button */}
-      <Button variant="outline-light" className="filter" onClick={() => setModalShow(true)}>
+      <Button
+        variant="outline-light"
+        className="filter"
+        onClick={() => setModalShow(true)}
+        disabled={isFilterDisabled}
+      >
         Filter
       </Button>
 
@@ -52,7 +63,7 @@ function Filter({ selectedGenre, filterByGenre, modalShow, setModalShow }) {
                     id={genre}
                     label={genre}
                     className="d-flex gap-3"
-                    onChange={(event) => {selectedGenre(event)}}
+                    onChange={(event) => {selectedGenreHandler(event)}}
                     value={genre}
                   />
                 </Col>
@@ -64,7 +75,7 @@ function Filter({ selectedGenre, filterByGenre, modalShow, setModalShow }) {
           <Button
             variant="outline-light"
             className="find"
-            onClick={filterByGenre}
+            onClick={filterByGenreHandler}
           >
             Find
           </Button>

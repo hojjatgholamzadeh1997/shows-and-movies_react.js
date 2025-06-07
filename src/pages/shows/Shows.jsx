@@ -8,11 +8,18 @@ import useFetch from "../../hooks/useFetch";
 import Loading from "../../components/loadings/Fetching";
 import ErrorFetching from "../../components/errors/ErrorFetching";
 import { TbFaceIdError } from "react-icons/tb";
+import Button from 'react-bootstrap/Button';
+import { RxCross2 } from "react-icons/rx";
 
 function Shows() {
   const [changed, setChanged] = useState([]);
 
+  const [selected, setSelected] = useState("");
+
   const [isSearchInputEmpty, SetIsSearchInputEmpty] = useState(true);
+
+  const [isFilterDisabled, setIsFilterDisabled] = useState(false);
+  const [isSearchDisabled, setIsSearchDisabled] = useState(false);
 
   const [modalShow, setModalShow] = useState(false);
 
@@ -21,6 +28,8 @@ function Shows() {
 
   // Search Function
   const searchInputHandler = (event) => {
+    event.target.value.trimStart() !== "" ? setIsFilterDisabled(true) : setIsFilterDisabled(false);
+
     const searchedItems = shows.filter((value) => value.title.replaceAll(" ", "").toLowerCase().includes(event.target.value.trimStart().replaceAll(" ", "").toLowerCase()));
     setChanged(searchedItems);
     // No Results Found
@@ -28,19 +37,26 @@ function Shows() {
   };
 
   // Select By Genre Function
-  let selected = "";
-  const selectedGenre = (event) => {
-    selected = event.target.value;
+  const selectedGenreHandler = (event) => {
+    setSelected(event.target.value);
   };
   // Filter By Genre Function
-  const filterByGenre = () => {
-    if (selected === "" || selected === "All") {
-      setChanged([]);
+  const filterByGenreHandler = () => {
+    if (selected === "All") {
+      setChanged(shows);
+      setIsSearchDisabled(false);
     } else {
-      const selectedItems = shows.filter((value) => value.genres.includes(selected));
-      setChanged(selectedItems);
+      const selectedItem = shows.filter((value) => value.genres.includes(selected));
+      setChanged(selectedItem);
+      setIsSearchDisabled(true);
     }
     setModalShow(false);
+  };
+
+  // Remove Filtered Item Function
+  const removeItemHandler = () => {
+    setChanged(shows);
+    setIsSearchDisabled(false);
   };
 
   return (
@@ -50,8 +66,24 @@ function Shows() {
         className="d-flex flex-row justify-content-center align-items-center gap-2 px-3 py-4 z-3 bg-dark"
         style={{position: "sticky", top: "57px"}}
       >
-        <Search searchInputHandler={searchInputHandler} />
-        <Filter selectedGenre={selectedGenre} filterByGenre={filterByGenre} modalShow={modalShow} setModalShow={setModalShow} />
+        <Search
+          searchInputHandler={searchInputHandler}
+          isSearchDisabled={isSearchDisabled}
+        />
+        {isSearchDisabled && (
+          <Button variant="outline-light" className="filter d-flex align-items-center gap-2">
+            <span>{selected}</span>
+            <RxCross2 onClick={removeItemHandler} />
+          </Button>
+        )}
+        <Filter
+          selectedGenreHandler={selectedGenreHandler}
+          filterByGenreHandler={filterByGenreHandler}
+          modalShow={modalShow}
+          setModalShow={setModalShow}
+          isFilterDisabled={isFilterDisabled}
+          setIsSearchDisabled={setIsSearchDisabled}
+        />
       </div>
       {isPending ? (
         <Loading />
@@ -88,6 +120,7 @@ function Shows() {
           </Container>
         )
       )}
+      <br /> {/* Test */}
       <br /> {/* Test */}
     </>
   );

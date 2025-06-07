@@ -12,8 +12,7 @@ function ShowCard({
   title,
   description,
   genres,
-  downloadLink,
-  filterByGenreHandler
+  downloadLink
 }) {
   return (
     <Card className="position-relative text-center h-100">
@@ -38,7 +37,6 @@ function ShowCard({
               size="sm"
               className="me-2 mb-2"
               value={genre}
-              onClick={(event) => {filterByGenreHandler(event)}}
             >
               {genre}
             </Button>
