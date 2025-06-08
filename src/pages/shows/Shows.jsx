@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Header from "../../components/layout/Header";
 import Footer from "../../components/layout/Footer";
 import Search from "../../components/partials/Search";
@@ -13,9 +13,11 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import { TbFaceIdError } from "react-icons/tb";
 import { RxCross2 } from "react-icons/rx";
+import Pagination from "../../components/partials/Pagination";
+import ScrollToTop from "../../components/partials/ScrollToTop";
 
 function Shows() {
-  const [changed, setChanged] = useState([]);
+  const [changedShows, setChangedShows] = useState([]);
 
   const [selected, setSelected] = useState("");
 
@@ -26,17 +28,43 @@ function Shows() {
 
   const [modalShow, setModalShow] = useState(false);
 
+  const [pageCount, setPageCount] = useState(3);
+  const [pageNumber, setPageNumber] = useState(1);
+
+  // Scroll To Top
+  useEffect(() => {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  });
+
   // Fetching Data
   const [isPending, isThereError, shows] = useFetch("https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/data/shows.json");
 
   // Search Function
   const searchInputHandler = (event) => {
-    event.target.value.trimStart() !== "" ? setIsFilterDisabled(true) : setIsFilterDisabled(false);
+    if (event.target.value.trimStart() !== "") {
+      setIsFilterDisabled(true);
 
-    const searchedItems = shows.filter((value) => value.title.replaceAll(" ", "").toLowerCase().includes(event.target.value.trimStart().replaceAll(" ", "").toLowerCase()));
-    setChanged(searchedItems);
-    // No Results Found
-    if (searchedItems.length === 0) SetIsSearchInputEmpty(false);
+      const searchedItems = shows.filter((value) => value.title.replaceAll(" ", "").toLowerCase().includes(event.target.value.trimStart().replaceAll(" ", "").toLowerCase()));
+      setChangedShows(searchedItems);
+      setPageCount(Math.round(searchedItems.length / 12));
+      // Reset Page Number
+      setPageNumber(1);
+
+      // No Results Found
+      if (searchedItems.length === 0) SetIsSearchInputEmpty(false);
+
+    } else {
+      setChangedShows(shows);
+      setIsFilterDisabled(false);
+      setPageCount(3);
+      // Reset Page Number
+      setPageNumber(1);
+    }
+
+    // Scroll To Top
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   };
 
   // Select By Genre Function
@@ -46,20 +74,45 @@ function Shows() {
   // Filter By Genre Function
   const filterByGenreHandler = () => {
     if (selected === "All") {
-      setChanged(shows);
+      setChangedShows(shows);
       setIsSearchDisabled(false);
+      setPageCount(3);
+      // Reset Page Number
+      setPageNumber(1);
     } else {
       const selectedItem = shows.filter((value) => value.genres.includes(selected));
-      setChanged(selectedItem);
+      setChangedShows(selectedItem);
       setIsSearchDisabled(true);
+      setPageCount(Math.round(selectedItem.length / 12));
+      // Reset Page Number
+      setPageNumber(1);
     }
     setModalShow(false);
+
+    // Scroll To Top
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   };
 
   // Remove Filtered Item Function
   const removeItemHandler = () => {
-    setChanged(shows);
+    setChangedShows(shows);
     setIsSearchDisabled(false);
+    setPageCount(3);
+    setPageNumber(1);
+
+    // Scroll To Top
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  };
+
+  // Change Page Function
+  const changePageHandler = (event) => {
+    setPageNumber(event.selected + 1);
+
+    // Scroll To Top
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   };
 
   return (
@@ -98,18 +151,22 @@ function Shows() {
             <ErrorFetching />
           ) : (
             <Row xs={1} sm={2} md={3} lg={4} className="px-3">
-              {changed.length ? (
-                changed.map((show) => (
+              {changedShows.length ? (
+                changedShows.map((show, index) => (
+                  index >= ((pageNumber * 12) - 12) &&
+                  index < ((pageNumber * 12)) &&
                   <Col key={show.id} className="p-2" >
                     <ShowCard {...show} />
                   </Col>
                 ))
               ) : (
                 isSearchInputEmpty ? (
-                  shows.map((show) => ( 
-                  <Col key={show.id} className="p-2" >
-                    <ShowCard {...show} />
-                  </Col>
+                  shows.map((show, index) => (
+                    index >= ((pageNumber * 12) - 12) &&
+                    index < ((pageNumber * 12)) &&
+                    <Col key={show.id} className="p-2" >
+                      <ShowCard {...show} />
+                    </Col>
                   ))
                 ) : (
                   <div
@@ -125,7 +182,9 @@ function Shows() {
           )
         )}
       </Container>
+      <Pagination pageCount={pageCount} changePageHandler={changePageHandler} />
       <Footer />
+      <ScrollToTop />
     </>
   );
 }

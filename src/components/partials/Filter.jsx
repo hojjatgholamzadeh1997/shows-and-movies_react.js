@@ -4,6 +4,7 @@ import Col from 'react-bootstrap/Col';
 import Modal from 'react-bootstrap/Modal';
 import Button from "react-bootstrap/Button";
 import Form from 'react-bootstrap/Form';
+import { memo } from "react";
 
 function Filter({
   selectedGenreHandler,
@@ -89,4 +90,4 @@ function Filter({
   );
 }
 
-export default Filter;
+export default memo(Filter);

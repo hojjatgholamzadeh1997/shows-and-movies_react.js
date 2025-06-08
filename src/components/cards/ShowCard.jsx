@@ -3,6 +3,7 @@ import Card from 'react-bootstrap/Card';
 import Badge from "react-bootstrap/Badge";
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
+import { memo } from "react";
 
 function ShowCard({
   id,
@@ -20,7 +21,7 @@ function ShowCard({
       <Link to={`${id}`}>
         <Badge bg="light" text="dark" className="imdb-rating">{imdbRating}</Badge>
         <Badge bg="light" text="dark" className="age-rating">{ageRating}</Badge>
-        <Card.Img variant="top" src={image} />
+        <Card.Img variant="top" src={image} loading="lazy" />
       </Link>
 
       {/* Title & Genres & Description */}
@@ -59,4 +60,4 @@ function ShowCard({
   );
 }
 
-export default ShowCard;
+export default memo(ShowCard);

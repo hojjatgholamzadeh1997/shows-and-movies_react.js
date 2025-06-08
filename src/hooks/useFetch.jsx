@@ -7,7 +7,7 @@ const useFetch = (url) => {
   
   useEffect(() => {
     fetch(url)
-      .then((data) => data.json())
+      .then((response) => response.json())
       .then((result) => {
         setDatas(result);
         setInterval(() => {

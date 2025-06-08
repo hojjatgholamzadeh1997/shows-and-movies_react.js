@@ -1,9 +1,13 @@
+import { memo } from "react";
+
 function Footer() {
   return (
     <>
-      <p className="border-top mt-4 pt-5 pb-4 text-center">Footer</p>
+      <div className="border-top py-5 text-center px-5" style={{fontSize: "13px"}}>
+        © 2025 <a href="https://github.com/hojjatgholamzadeh1997" target="_blank" rel="noopener noreferrer">Hojjat Gholamzadeh</a>. All rights reserved.
+      </div>
     </>
   );
 }
 
-export default Footer;
+export default memo(Footer);

@@ -1,3 +1,4 @@
+import { memo } from "react";
 import "./Search.css";
 import Form from 'react-bootstrap/Form';
 
@@ -17,4 +18,4 @@ function Search({ searchInputHandler, isSearchDisabled }) {
   );
 }
 
-export default Search;
+export default memo(Search);

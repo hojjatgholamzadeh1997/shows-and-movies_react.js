@@ -5,6 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { NavLink } from "react-router-dom";
+import { memo } from "react";
 
 function Header() {
   const expand = "md";
@@ -41,4 +42,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default memo(Header);

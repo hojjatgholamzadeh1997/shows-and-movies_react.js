@@ -1,3 +1,4 @@
+import { memo } from "react";
 import "./Fetching.css";
 
 function Loading() {
@@ -10,4 +11,4 @@ function Loading() {
   );
 }
 
-export default Loading;
+export default memo(Loading);

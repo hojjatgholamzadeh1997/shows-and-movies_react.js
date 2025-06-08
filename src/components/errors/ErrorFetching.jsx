@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { MdError } from "react-icons/md";
 
 function ErrorFetching() {
@@ -11,4 +12,4 @@ function ErrorFetching() {
   );
 }
 
-export default ErrorFetching;
+export default memo(ErrorFetching);

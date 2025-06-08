@@ -79,6 +79,10 @@
         - partials
           - Filter.css
           - Filter.jsx
+          - Pagination.css
+          - Pagination.jsx
+          - ScrollToTop.css
+          - ScrollToTop.jsx
           - Search.css
           - Search.jsx
       - data

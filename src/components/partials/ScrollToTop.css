@@ -1,0 +1,15 @@
+/* ScrollToTop Component Styles */
+.scroll-to-top {
+  border-radius: 50% !important;
+  padding: 0 !important;
+  width: 40px !important;
+  height: 40px !important;
+  position: fixed !important;
+  right: 15px !important;
+  bottom: 15px !important;
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
