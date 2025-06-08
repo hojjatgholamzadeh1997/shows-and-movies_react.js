@@ -1,14 +1,17 @@
 import { useState } from "react";
-import MyNavbar from "../../components/MyNavbar";
-import { Container, Row, Col } from "react-bootstrap";
-import ShowCard from "../../components/ShowCard";
-import Search from "../../components/Search";
-import Filter from "../../components/Filter";
-import useFetch from "../../hooks/useFetch";
+import Header from "../../components/layout/Header";
+import Footer from "../../components/layout/Footer";
+import Search from "../../components/partials/Search";
+import Filter from "../../components/partials/Filter";
+import ShowCard from "../../components/cards/ShowCard";
 import Loading from "../../components/loadings/Fetching";
 import ErrorFetching from "../../components/errors/ErrorFetching";
-import { TbFaceIdError } from "react-icons/tb";
+import useFetch from "../../hooks/useFetch";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
+import { TbFaceIdError } from "react-icons/tb";
 import { RxCross2 } from "react-icons/rx";
 
 function Shows() {
@@ -61,7 +64,8 @@ function Shows() {
 
   return (
     <>
-      <MyNavbar />
+      <Header />
+      {/* Search & Filter */}
       <div
         className="d-flex flex-row justify-content-center align-items-center gap-2 px-3 py-4 z-3 bg-dark"
         style={{position: "sticky", top: "57px"}}
@@ -85,13 +89,14 @@ function Shows() {
           setIsSearchDisabled={setIsSearchDisabled}
         />
       </div>
-      {isPending ? (
-        <Loading />
-      ) : (
-        isThereError ? (
-          <ErrorFetching />
+      {/* Main */}
+      <Container>
+        {isPending ? (
+          <Loading />
         ) : (
-          <Container>
+          isThereError ? (
+            <ErrorFetching />
+          ) : (
             <Row xs={1} sm={2} md={3} lg={4} className="px-3">
               {changed.length ? (
                 changed.map((show) => (
@@ -117,11 +122,10 @@ function Shows() {
                 )
               )}
             </Row>
-          </Container>
-        )
-      )}
-      <br /> {/* Test */}
-      <br /> {/* Test */}
+          )
+        )}
+      </Container>
+      <Footer />
     </>
   );
 }

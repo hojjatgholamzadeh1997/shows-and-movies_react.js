@@ -37,25 +37,54 @@
         - fonts
         - images
           - shows
+            - 24.jpg
+            - better-call-saul.jpg
+            - black-mirror.jpg
             - breaking-bad.jpg
             - chernobyl.jpg
+            - dark.jpg
+            - fleabag.jpg
             - friends.jpg
+            - jessica-jones.jpg
+            - lost.jpg
+            - money-heist.jpg
+            - mr-robot.jpg
+            - peaky-blinders.jpg
+            - penny-dreadful.jpg
+            - person-of-interest.jpg
+            - prison-break.jpg
             - game-of-thrones.jpg
             - sherlock.jpg
+            - the-blacklist.jpg
+            - the-leftovers.jpg
             - the-office.jpg
+            - the-punisher.jpg
+            - the-walking-dead.jpg
+            - vikings.jpg
+            - westworld.jpg
           - logo.png
       - components
-        - Filter.css
-        - Filter.jsx
-        - MyNavbar.css
-        - MyNavbar.jsx
-        - Search.css
-        - Search.jsx
-        - ShowCard.css
-        - ShowCard.jsx
+        - cards
+          - ShowCard.css
+          - ShowCard.jsx
+        - errors
+          - ErrorFetching.jsx
+        - layout
+          - Footer.jsx
+          - Header.css
+          - Header.jsx
+        - loadings
+          - Fetching.css
+          - Fetching.jsx
+        - partials
+          - Filter.css
+          - Filter.jsx
+          - Search.css
+          - Search.jsx
       - data
         - data.json
       - hooks
+        - useFetch.jsx
       - pages
         - 404
           - NotFound.jsx

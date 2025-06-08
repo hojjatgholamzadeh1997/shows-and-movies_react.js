@@ -1,8 +1,9 @@
 import "./Filter.css";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import Modal from 'react-bootstrap/Modal';
 import Button from "react-bootstrap/Button";
 import Form from 'react-bootstrap/Form';
-import { Col, Row } from "react-bootstrap";
 
 function Filter({
   selectedGenreHandler,
@@ -21,11 +22,14 @@ function Filter({
     "Adventure",
     "Fantasy",
     "History",
+    "Horror",
     "Mystery",
     "Romance",
+    "Sci-Fi",
     "Sitcom",
     "Thriller",
     "Tragedy",
+    "War"
   ];
 
   return (

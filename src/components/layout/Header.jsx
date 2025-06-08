@@ -1,12 +1,12 @@
-import "./MyNavbar.css";
+import "./Header.css";
+import logo from "../../assets/images/logo.png";
 import Navbar from 'react-bootstrap/Navbar';
-import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
+import Container from 'react-bootstrap/Container';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { NavLink } from "react-router-dom";
-import logo from "../assets/images/logo.png";
 
-function MyNavbar() {
+function Header() {
   const expand = "md";
 
   return (
@@ -41,4 +41,4 @@ function MyNavbar() {
   );
 }
 
-export default MyNavbar;
+export default Header;

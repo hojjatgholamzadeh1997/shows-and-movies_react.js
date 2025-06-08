@@ -1,10 +1,12 @@
-import MyNavbar from "../../components/MyNavbar";
+import Header from "../../components/layout/Header";
+import Footer from "../../components/layout/Footer";
 
 function Movies() {
   return (
     <>
-      <MyNavbar />
-      <p>Movies Page</p>
+      <Header />
+      <p className="text-center pt-4">Movies Page</p>
+      <Footer />
     </>
   );
 }
