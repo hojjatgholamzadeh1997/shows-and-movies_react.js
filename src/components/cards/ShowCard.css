@@ -9,6 +9,18 @@
   border-color: rgba(255, 255, 255, 0.55) !important;
 }
 
+.nav-link[title="information"] {
+  border-left-color: #495057 !important;
+  border-right-color: #495057 !important;
+  border-top-color: #495057 !important;
+}
+
+.nav-link[title="cast"] {
+  border-left-color: #495057 !important;
+  border-right-color: #495057 !important;
+  border-top-color: #495057 !important;
+}
+
 .show-title {
   font-size: 18px !important;
   margin-left: 10px !important;

@@ -13,7 +13,7 @@ function ShowCard({ show }) {
   const [tabID, setTabID] = useState("#information");
 
   const changeTabHandler = () => {
-    tabID === "#information" ? setTabID("#more-images") : setTabID("#information");
+    tabID === "#information" ? setTabID("#casts") : setTabID("#information");
   };
 
   return (
@@ -23,10 +23,10 @@ function ShowCard({ show }) {
           <Card.Header>
             <Nav variant="tabs" defaultActiveKey="#information" className='d-flex gap-2'>
               <Nav.Item>
-                <Nav.Link href="#information" onClick={changeTabHandler}>Information</Nav.Link>
+                <Nav.Link href="#information" title="information" onClick={changeTabHandler}>Information</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link href="#more-images" onClick={changeTabHandler}>More Images</Nav.Link>
+                <Nav.Link href="#casts" title="cast" onClick={changeTabHandler}>Casts</Nav.Link>
               </Nav.Item>
             </Nav>
           </Card.Header>
@@ -78,7 +78,7 @@ function ShowCard({ show }) {
               </div>
             </Card.Body>
           )}
-          {tabID === "#more-images" && (
+          {tabID === "#casts" && (
             <Card.Body>
               <Card.Title className='d-flex justify-content-between align-items-center'>
                 <span className='show-title'>{show.title}</span>
@@ -86,9 +86,11 @@ function ShowCard({ show }) {
               </Card.Title>
               <hr />
               <Carousel data-bs-theme="light">
-                <Carousel.Item>
-                  <img src={show.image} alt={show.name} className="w-100 rounded" />
-                </Carousel.Item>
+                {show.casts.map((cast) => (
+                  <Carousel.Item>
+                    <img src={cast.image} alt={cast.name} loading="lazy" className="w-100 rounded" />
+                  </Carousel.Item>
+                ))}
               </Carousel>
             </Card.Body>
           )}
