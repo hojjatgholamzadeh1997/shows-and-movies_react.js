@@ -371,36 +371,28 @@
     "casts": [
       {
         "name": "Matthew Perry",
-        "image": ""
+        "image": "https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/assets/images/shows/more-images/friends/matthew-perry.jpg"
       },
       {
         "name": "Courteney Cox",
-        "image": ""
+        "image": "https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/assets/images/shows/more-images/friends/courteney-cox.jpg"
       },
       {
         "name": "Matt LeBlanc",
-        "image": ""
+        "image": "https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/assets/images/shows/more-images/friends/matt-leblanc.jpg"
       },
       {
         "name": "Jennifer Aniston",
-        "image": ""
+        "image": "https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/assets/images/shows/more-images/friends/jennifer-aniston.jpg"
       },
       {
         "name": "David Schwimmer",
-        "image": ""
+        "image": "https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/assets/images/shows/more-images/friends/david-schwimmer.jpg"
       },
       {
         "name": "Lisa Kudrow",
-        "image": ""
+        "image": "https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/assets/images/shows/more-images/friends/lisa-kudrow.jpg"
       }
-    ],
-    "castsImage": [
-      "https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/assets/images/shows/more-images/friends/matthew-perry.jpg",
-      "https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/assets/images/shows/more-images/friends/courteney-cox.jpg",
-      "https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/assets/images/shows/more-images/friends/matt-leblanc.jpg",
-      "https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/assets/images/shows/more-images/friends/jennifer-aniston.jpg",
-      "https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/assets/images/shows/more-images/friends/david-schwimmer.jpg",
-      "https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/assets/images/shows/more-images/friends/lisa-kudrow.jpg"
     ],
     "releaseYears": "1994 - 2004",
     "ageRating": "TV-14",
