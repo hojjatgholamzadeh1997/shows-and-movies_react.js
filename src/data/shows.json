@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "name": "breaking-bad",
     "title": "Breaking Bad",
     "image": "https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/assets/images/shows/breaking-bad.jpg",
     "description": "A chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine with a former student to secure his family's future.",
@@ -16,6 +17,7 @@
   },
   {
     "id": 2,
+    "name": "chernobyl",
     "title": "Chernobyl",
     "image": "https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/assets/images/shows/chernobyl.jpg",
     "description": "In April 1986, the city of Chernobyl in the Soviet Union suffers one of the worst nuclear disasters in the history of mankind. Consequently, many heroes put their lives on the line in the following days, weeks and months.",
@@ -31,6 +33,7 @@
   },
   {
     "id": 3,
+    "name": "game-of-thrones",
     "title": "Game of Thrones",
     "image": "https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/assets/images/shows/game-of-thrones.jpg",
     "description": "Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for millennia.",
@@ -46,6 +49,7 @@
   },
   {
     "id": 4,
+    "name": "better-call-saul",
     "title": "Better Call Saul",
     "image": "https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/assets/images/shows/better-call-saul.jpg",
     "description": "The trials and tribulations of criminal lawyer Jimmy McGill in the years leading up to his fateful run-in with Walter White and Jesse Pinkman.",
@@ -61,6 +65,7 @@
   },
   {
     "id": 5,
+    "name": "sherlock",
     "title": "Sherlock",
     "image": "https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/assets/images/shows/sherlock.jpg",
     "description": "The quirky spin on Conan Doyle's iconic sleuth pitches him as a \"high-functioning sociopath\" in modern-day London. Assisting him in his investigations: Afghanistan War vet John Watson, who's introduced to Holmes by a mutual acquaintance.",
@@ -76,6 +81,7 @@
   },
   {
     "id": 6,
+    "name": "the-office",
     "title": "The Office",
     "image": "https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/assets/images/shows/the-office.jpg",
     "description": "A mockumentary on a group of typical office workers, where the workday consists of ego clashes, inappropriate behavior, tedium and romance.",
@@ -91,6 +97,7 @@
   },
   {
     "id": 7,
+    "name": "friends",
     "title": "Friends",
     "image": "https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/assets/images/shows/friends.jpg",
     "description": "Follows the personal and professional lives of six twenty to thirty year-old friends living in the Manhattan borough of New York City.",
@@ -106,6 +113,7 @@
   },
   {
     "id": 8,
+    "name": "peaky-blinders",
     "title": "Peaky Blinders",
     "image": "https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/assets/images/shows/peaky-blinders.jpg",
     "description": "A gangster family epic set in 1900s England, centering on a gang who sew razor blades in the peaks of their caps, and their fierce boss Tommy Shelby.",
@@ -121,6 +129,7 @@
   },
   {
     "id": 9,
+    "name": "dark",
     "title": "Dark",
     "image": "https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/assets/images/shows/dark.jpg",
     "description": "A family saga with a supernatural twist, set in a German town where the disappearance of two young children exposes the relationships among four families.",
@@ -136,6 +145,7 @@
   },
   {
     "id": 10,
+    "name": "fleabag",
     "title": "Fleabag",
     "image": "https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/assets/images/shows/fleabag.jpg",
     "description": "Series adapted from the award-winning play about a young woman trying to cope with life in London whilst coming to terms with a recent tragedy.",
@@ -151,6 +161,7 @@
   },
   {
     "id": 11,
+    "name": "black-mirror",
     "title": "Black Mirror",
     "image": "https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/assets/images/shows/black-mirror.jpg",
     "description": "Featuring stand-alone dramas -- sharp, suspenseful, satirical tales that explore techno-paranoia -- \"Black Mirror\" is a contemporary reworking of \"The Twilight Zone\" with stories that tap into the collective unease about the modern world.",
@@ -166,6 +177,7 @@
   },
   {
     "id": 12,
+    "name": "person-of-interest",
     "title": "Person of Interest",
     "image": "https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/assets/images/shows/person-of-interest.jpg",
     "description": "An off-the-grid and presumed-dead former CIA agent, John Reese, is hired by a mysterious tech billionaire software genius, Harold Finch, to prevent violent crimes before they happen in New York City via an advanced surveillance software.",
@@ -181,6 +193,7 @@
   },
   {
     "id": 13,
+    "name": "mr-robot",
     "title": "Mr. Robot",
     "image": "https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/assets/images/shows/mr-robot.jpg",
     "description": "Elliot, a brilliant but unstable cyber-security engineer and vigilante hacker, becomes a key figure in a complex game of global chaos when he and his shadowy allies try to take down the corrupt corporation his company is paid to protect.",
@@ -196,6 +209,7 @@
   },
   {
     "id": 14,
+    "name": "vikings",
     "title": "Vikings",
     "image": "https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/assets/images/shows/vikings.jpg",
     "description": "Vikings transports us to the brutal and mysterious world of Ragnar Lothbrok, a Viking warrior and farmer who yearns to explore--and raid--the distant shores across the ocean.",
@@ -211,6 +225,7 @@
   },
   {
     "id": 15,
+    "name": "24",
     "title": "24",
     "image": "https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/assets/images/shows/24.jpg",
     "description": "Counter Terrorism Agent Jack Bauer races against the clock to subvert terrorist plots and save his nation from ultimate disaster.",
@@ -226,6 +241,7 @@
   },
   {
     "id": 16,
+    "name": "westworld",
     "title": "Westworld",
     "image": "https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/assets/images/shows/westworld.jpg",
     "description": "At the intersection of the near future and the reimagined past, waits a world in which every human appetite can be indulged without consequence.",
@@ -241,6 +257,7 @@
   },
   {
     "id": 17,
+    "name": "the-punisher",
     "title": "The Punisher",
     "image": "https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/assets/images/shows/the-punisher.jpg",
     "description": "After his revenge on those who murdered his family, aimless Marine veteran Frank Castle finds a new meaning in life as a vigilante known as \"The Punisher\".",
@@ -256,6 +273,7 @@
   },
   {
     "id": 18,
+    "name": "prison-break",
     "title": "Prison Break",
     "image": "https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/assets/images/shows/prison-break.jpg",
     "description": "A structural engineer installs himself in a prison he helped design, in order to save his falsely accused brother from a death sentence by breaking themselves out from the inside.",
@@ -271,6 +289,7 @@
   },
   {
     "id": 19,
+    "name": "lost",
     "title": "Lost",
     "image": "https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/assets/images/shows/lost.jpg",
     "description": "The survivors of a plane crash are forced to work together in order to survive on a seemingly deserted tropical island.",
@@ -286,6 +305,7 @@
   },
   {
     "id": 20,
+    "name": "the-leftovers",
     "title": "The Leftovers",
     "image": "https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/assets/images/shows/the-leftovers.jpg",
     "description": "Three years after the disappearance of 2% of the global human population, a group of people in a small New York community try to continue their lives while coping with the tragedy of the unexplained nature of the event.",
@@ -301,6 +321,7 @@
   },
   {
     "id": 21,
+    "name": "money-heist",
     "title": "Money Heist",
     "image": "https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/assets/images/shows/money-heist.jpg",
     "description": "An unusual group of robbers attempt to carry out the most perfect robbery in Spanish history - stealing 2.4 billion euros from the Royal Mint of Spain.",
@@ -316,6 +337,7 @@
   },
   {
     "id": 22,
+    "name": "the-walking-dead",
     "title": "The Walking Dead",
     "image": "https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/assets/images/shows/the-walking-dead.jpg",
     "description": "Sheriff Deputy Rick Grimes wakes up from a coma to learn the world is in ruins and must lead a group of survivors to stay alive.",
@@ -331,6 +353,7 @@
   },
   {
     "id": 23,
+    "name": "the-blacklist",
     "title": "The Blacklist",
     "image": "https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/assets/images/shows/the-blacklist.jpg",
     "description": "A new FBI profiler, Elizabeth Keen, has her entire life uprooted when a mysterious criminal, Raymond Reddington, who has eluded capture for decades, turns himself in and insists on speaking only to her.",
@@ -346,6 +369,7 @@
   },
   {
     "id": 24,
+    "name": "jessica-jones",
     "title": "Jessica Jones",
     "image": "https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/assets/images/shows/jessica-jones.jpg",
     "description": "Following the tragic end of her brief superhero career, Jessica Jones tries to rebuild her life as a private investigator, dealing with cases involving people with remarkable abilities in New York City.",
@@ -361,6 +385,7 @@
   },
   {
     "id": 25,
+    "name": "penny-dreadful",
     "title": "Penny Dreadful",
     "image": "https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/assets/images/shows/penny-dreadful.jpg",
     "description": "Explorer Sir Malcolm Murray, American gunslinger Ethan Chandler, scientist Victor Frankenstein and medium Vanessa Ives unite to combat supernatural threats in Victorian London.",
