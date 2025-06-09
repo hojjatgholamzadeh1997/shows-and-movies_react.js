@@ -3,10 +3,10 @@ import Header from "../../components/layout/Header";
 import Footer from "../../components/layout/Footer";
 import Search from "../../components/partials/Search";
 import Filter from "../../components/partials/Filter";
-import ShowCard from "../../components/cards/ShowCard";
+import ShowsCard from "../../components/cards/ShowsCard";
 import Loading from "../../components/loadings/Fetching";
 import ErrorFetching from "../../components/errors/ErrorFetching";
-import useFetch from "../../hooks/useFetch";
+import useFetchForAllDatas from "../../hooks/useFetchForAllDatas";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -38,7 +38,7 @@ function Shows() {
   });
 
   // Fetching Data
-  const [isPending, isThereError, shows] = useFetch("https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/data/shows.json");
+  const [isPending, isThereError, shows] = useFetchForAllDatas("https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/data/shows.json");
 
   // Search Function
   const searchInputHandler = (event) => {
@@ -156,7 +156,7 @@ function Shows() {
                   index >= ((pageNumber * 12) - 12) &&
                   index < ((pageNumber * 12)) &&
                   <Col key={show.id} className="p-2" >
-                    <ShowCard {...show} />
+                    <ShowsCard {...show} />
                   </Col>
                 ))
               ) : (
@@ -165,7 +165,7 @@ function Shows() {
                     index >= ((pageNumber * 12) - 12) &&
                     index < ((pageNumber * 12)) &&
                     <Col key={show.id} className="p-2" >
-                      <ShowCard {...show} />
+                      <ShowsCard {...show} />
                     </Col>
                   ))
                 ) : (

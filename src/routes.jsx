@@ -12,9 +12,9 @@ const routes = [
   { path: "/about", element: <About /> },
   { path: "/contact", element: <Contact /> },
   { path: "/shows", element: <Shows /> },
-  { path: "/shows/:showID", element: <Show /> },
+  { path: "/shows/:showName", element: <Show /> },
   { path: "/movies", element: <Movies /> },
-  { path: "/movies/:movieID", element: <Movie /> },
+  { path: "/movies/:movieName", element: <Movie /> },
   { path: "*", element: <NotFound /> },
 ];
 

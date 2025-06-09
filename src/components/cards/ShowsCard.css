@@ -1,0 +1,31 @@
+/* ShowsCard Component Styles */
+.shows-card:hover {
+  scale: 1.01 !important;
+}
+span.imdb-rating {
+  position: absolute !important;
+  top: 10px !important;
+  left: 10px !important;
+  padding: 10px !important;
+}
+
+span.age-rating {
+  position: absolute !important;
+  top: 10px !important;
+  right: 10px !important;
+  padding: 10px !important;
+}
+
+.card-body a {
+  text-decoration: none !important;
+}
+
+.shows-card-genres {
+  margin: 5px 5px;
+  background-color: transparent !important;
+  border-color: rgba(255, 255, 255, 0.55) !important;
+}
+
+.shows-card-genres:hover {
+  cursor: default !important;
+}

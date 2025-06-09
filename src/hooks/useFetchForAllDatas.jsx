@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const useFetch = (url) => {
+const useFetchForAllDatas = (url) => {
   const [isPending, setIsPending] = useState(true);
   const [isThereError, setIsThereError] = useState(false);
   const [datas, setDatas] = useState([]);
@@ -10,17 +10,13 @@ const useFetch = (url) => {
       .then((response) => response.json())
       .then((result) => {
         setDatas(result);
-        setInterval(() => {
-          setIsPending(false);
-        }, 500);
+        setIsPending(false);
       })
       .catch((error) => {
         console.log("ERROR Fetching Data!");
         console.log("ERROR:");
         console.log(error);
-        setInterval(() => {
-          setIsPending(false);
-        }, 500);
+        setIsPending(false);
         setIsThereError(true);
       });
 
@@ -29,4 +25,4 @@ const useFetch = (url) => {
   return [isPending, isThereError, datas];
 }
 
-export default useFetch;
+export default useFetchForAllDatas;

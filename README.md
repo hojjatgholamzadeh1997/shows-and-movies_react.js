@@ -65,8 +65,8 @@
           - logo.png
       - components
         - cards
-          - ShowCard.css
-          - ShowCard.jsx
+          - ShowsCard.css
+          - ShowsCard.jsx
         - errors
           - ErrorFetching.jsx
         - layout

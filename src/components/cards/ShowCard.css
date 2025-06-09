@@ -1,25 +1,54 @@
 /* ShowCard Component Styles */
-/* Card */
-.card:hover {
-  scale: 1.01 !important;
+.show-card {
+  width: 300px !important;
+  margin: 25px auto !important;
 }
 
-/* Badges */
-span.imdb-rating {
-  position: absolute !important;
-  top: 10px !important;
-  left: 10px !important;
+.list-group-item.active {
+  background-color: transparent !important;
+  border-color: rgba(255, 255, 255, 0.55) !important;
+}
+
+.show-title {
+  font-size: 18px !important;
+  margin-left: 10px !important;
+}
+
+.show-release-years, .show-download {
+  background-color: transparent !important;
+  border-color: #495057 !important;
+  padding: 7.5px 10px !important;
+  color: #DEE2E6 !important;
+}
+
+.show-release-years:hover {
+  cursor: default !important;
+}
+
+.show-download:hover {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.show-summary {
   padding: 10px !important;
+  text-align: justify !important;
+  line-break: anywhere !important;
 }
 
-span.age-rating {
-  position: absolute !important;
-  top: 10px !important;
-  right: 10px !important;
-  padding: 10px !important;
+.show-creator {
+  border: 1px solid #495057 !important;
+  padding: 15px !important;
+  border-radius: 10px !important;
 }
 
-/* Title */
-.card-body a {
-  text-decoration: none !important;
+.number-of-seasons, .number-of-episodes {
+  border-radius: 50% !important;
+  border: 1px solid #495057 !important;
+  width: 35px !important;
+  height: 35px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  font-size: 12px !important;
 }
