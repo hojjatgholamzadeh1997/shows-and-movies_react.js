@@ -7,13 +7,13 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import Carousel from 'react-bootstrap/Carousel';
 import { BsPeopleFill } from "react-icons/bs";
 import { BiCategory } from "react-icons/bi";
-import { useState } from "react";
+import { memo, useState } from "react";
 
 function ShowCard({ show }) {
   const [tabID, setTabID] = useState("#information");
 
-  const changeTabHandler = () => {
-    tabID === "#information" ? setTabID("#casts") : setTabID("#information");
+  const changeTabHandler = (event) => {
+    setTabID(`#${event.target.title}`)
   };
 
   return (
@@ -23,10 +23,10 @@ function ShowCard({ show }) {
           <Card.Header>
             <Nav variant="tabs" defaultActiveKey="#information" className='d-flex gap-2'>
               <Nav.Item>
-                <Nav.Link href="#information" title="information" onClick={changeTabHandler}>Information</Nav.Link>
+                <Nav.Link href="#information" title="information" onClick={(event) => {changeTabHandler(event)}}>Information</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link href="#casts" title="cast" onClick={changeTabHandler}>Casts</Nav.Link>
+                <Nav.Link href="#casts" title="casts" onClick={(event) => {changeTabHandler(event)}}>Casts</Nav.Link>
               </Nav.Item>
             </Nav>
           </Card.Header>
@@ -87,8 +87,11 @@ function ShowCard({ show }) {
               <hr />
               <Carousel data-bs-theme="light">
                 {show.casts.map((cast) => (
-                  <Carousel.Item>
+                  <Carousel.Item key={cast.id}>
                     <img src={cast.image} alt={cast.name} loading="lazy" className="w-100 rounded" />
+                    <Carousel.Caption>
+                      <h3 className="cast-name">{cast.name}</h3>
+                    </Carousel.Caption>
                   </Carousel.Item>
                 ))}
               </Carousel>
@@ -100,4 +103,4 @@ function ShowCard({ show }) {
   );
 }
 
-export default ShowCard;
+export default memo(ShowCard);

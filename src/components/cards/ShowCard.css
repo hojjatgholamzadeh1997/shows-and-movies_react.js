@@ -15,7 +15,7 @@
   border-top-color: #495057 !important;
 }
 
-.nav-link[title="cast"] {
+.nav-link[title="casts"] {
   border-left-color: #495057 !important;
   border-right-color: #495057 !important;
   border-top-color: #495057 !important;
@@ -63,4 +63,15 @@
   justify-content: center !important;
   align-items: center !important;
   font-size: 12px !important;
+}
+
+.cast-name {
+  background-color: rgba(33, 37, 41, 0.7);
+  font-size: 15px;
+  padding: 5px;
+  font-weight: normal;
+  border-radius: 7.5px;
+  letter-spacing: 1px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  line-height: 25px;
 }
