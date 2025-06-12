@@ -1,0 +1,25 @@
+/* ShowDownloadCard Component Styles */
+.accordion-button:not(.collapsed) {
+  color: #fff !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+
+.show-download-link {
+  width: 100% !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border-color: #495057 !important;
+  color: #fff !important;
+  font-size: 14px !important;
+  padding: 15px 0 !important;
+}
+
+.show-download-link:hover {
+  background-color: #fff !important;
+  color: #000 !important;
+}

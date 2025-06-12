@@ -7,9 +7,4 @@
   position: fixed !important;
   right: 15px !important;
   bottom: 15px !important;
-  display: none !important;
-}
-
-.show {
-  display: block !important;
 }

@@ -14,7 +14,8 @@ import Button from 'react-bootstrap/Button';
 import { TbFaceIdError } from "react-icons/tb";
 import { RxCross2 } from "react-icons/rx";
 import Pagination from "../../components/partials/Pagination";
-import ScrollToTop from "../../components/partials/ScrollToTop";
+import ScrollToTopButton from "../../components/partials/ScrollToTopButton";
+import { scrollToTop } from "../../utils/utils";
 
 function Shows() {
   const [changedShows, setChangedShows] = useState([]);
@@ -33,8 +34,7 @@ function Shows() {
 
   // Scroll To Top
   useEffect(() => {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    scrollToTop();
   });
 
   // Fetching Data
@@ -63,8 +63,7 @@ function Shows() {
     }
 
     // Scroll To Top
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    scrollToTop();
   };
 
   // Select By Genre Function
@@ -90,8 +89,7 @@ function Shows() {
     setModalShow(false);
 
     // Scroll To Top
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    scrollToTop();
   };
 
   // Remove Filtered Item Function
@@ -102,8 +100,7 @@ function Shows() {
     setPageNumber(1);
 
     // Scroll To Top
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    scrollToTop();
   };
 
   // Change Page Function
@@ -111,8 +108,7 @@ function Shows() {
     setPageNumber(event.selected + 1);
 
     // Scroll To Top
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    scrollToTop();
   };
 
   return (
@@ -184,7 +180,7 @@ function Shows() {
       </Container>
       <Pagination pageCount={pageCount} changePageHandler={changePageHandler} />
       <Footer />
-      <ScrollToTop />
+      <ScrollToTopButton />
     </>
   );
 }

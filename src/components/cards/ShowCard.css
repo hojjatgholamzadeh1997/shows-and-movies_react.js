@@ -1,9 +1,4 @@
 /* ShowCard Component Styles */
-.show-card {
-  width: 300px !important;
-  margin: 25px auto !important;
-}
-
 .list-group-item.active {
   background-color: transparent !important;
   border-color: rgba(255, 255, 255, 0.55) !important;
@@ -22,11 +17,43 @@
 }
 
 .show-title {
-  font-size: 18px !important;
-  margin-left: 10px !important;
+  font-size: 16px !important;
+  margin-left: 0px !important;
 }
 
-.show-release-years, .show-download {
+@media screen and (min-width: 375px) {
+  .show-title {
+    font-size: 18px !important;
+    margin-left: 10px !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .show-title {
+    font-size: 16px !important;
+    margin-left: 0px !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .show-title {
+    font-size: 18px !important;
+    margin-left: 10px !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .show-title {
+    font-size: 18px !important;
+    margin-left: 15px !important;
+  }
+}
+
+.show-imdb-link {
+  width: 100%;
+}
+
+.show-release-years, .show-imdb-link {
   background-color: transparent !important;
   border-color: #495057 !important;
   padding: 7.5px 10px !important;
@@ -37,7 +64,7 @@
   cursor: default !important;
 }
 
-.show-download:hover {
+.show-imdb-link:hover {
   background-color: #fff !important;
   color: #000 !important;
 }
@@ -66,12 +93,12 @@
 }
 
 .cast-name {
-  background-color: rgba(33, 37, 41, 0.7);
+  background-color: #212529;
   font-size: 15px;
   padding: 5px;
   font-weight: normal;
   border-radius: 7.5px;
   letter-spacing: 1px;
-  border: 1px solid rgba(255, 255, 255, 0.7);
+  border: 1px solid #fff;
   line-height: 25px;
 }
