@@ -56,6 +56,9 @@
     "numberOfEpisodes": "62",
     "imdbPage": "https://www.imdb.com/title/tt0903747/",
     "downloadPage": "https://dls7.iran-gamecenter-host.com/DonyayeSerial/series2/tt0903747/SoftSub/",
+    "releaseDate": "January 20, 2008",
+    "countriesOfOrigin": ["United States"],
+    "languages": ["English", "Spanish"],
     "downloadLinks": [
       {
         "id": 1,
@@ -451,6 +454,9 @@
     "numberOfEpisodes": "5",
     "imdbPage": "https://www.imdb.com/title/tt7366338/",
     "downloadPage": "https://dls4.iran-gamecenter-host.com/DonyayeSerial/series2/tt7366338/SoftSub/",
+    "releaseDate": "May 6, 2019",
+    "countriesOfOrigin": ["United States", "United Kingdom"],
+    "languages": ["English", "Russian", "Ukrainian"],
     "downloadLinks": [
       {
         "id": 1,
@@ -562,6 +568,9 @@
     "numberOfEpisodes": "73",
     "imdbPage": "https://www.imdb.com/title/tt0944947/",
     "downloadPage": "https://dls4.iran-gamecenter-host.com/DonyayeSerial/series2/tt0944947/SoftSub/",
+    "releaseDate": "April 17, 2011",
+    "countriesOfOrigin": ["United States", "United Kingdom"],
+    "languages": ["English"],
     "downloadLinks": [
       {
         "id": 1,
@@ -1025,6 +1034,9 @@
     "numberOfEpisodes": "64",
     "imdbPage": "https://www.imdb.com/title/tt3032476/",
     "downloadPage": "https://dls.iran-gamecenter-host.com/DonyayeSerial/series/Better.Call.Saul/Soft.Sub/",
+    "releaseDate": "February 8, 2015",
+    "countriesOfOrigin": ["United States"],
+    "languages": ["English", "Spanish", "Vietnamese"],
     "downloadLinks": [
       {
         "id": 1,
@@ -1446,6 +1458,9 @@
     "numberOfEpisodes": "13",
     "imdbPage": "https://www.imdb.com/title/tt1475582/",
     "downloadPage": "https://dls2.iran-gamecenter-host.com/DonyayeSerial/series/Sherlock/Soft.Sub/",
+    "releaseDate": "October 24, 2010",
+    "countriesOfOrigin": ["United Kingdom", "United States"],
+    "languages": ["English"],
     "downloadLinks": [
       {
         "id": 1,
@@ -1650,6 +1665,9 @@
     "numberOfEpisodes": "190",
     "imdbPage": "https://www.imdb.com/title/tt0386676/",
     "downloadPage": "https://dls6.iran-gamecenter-host.com/DonyayeSerial/series/The.Office/Soft.Sub/",
+    "releaseDate": "March 24, 2005",
+    "countriesOfOrigin": ["United States"],
+    "languages": ["English", "Spanish", "German", "French"],
     "downloadLinks": [
       {
         "id": 1,
@@ -2684,6 +2702,9 @@
     "numberOfEpisodes": "234",
     "imdbPage": "https://www.imdb.com/title/tt0108778/",
     "downloadPage": "https://dls2.iran-gamecenter-host.com/DonyayeSerial/series2/tt0108778/SoftSub/",
+    "releaseDate": "September 22, 1994",
+    "countriesOfOrigin": ["United States"],
+    "languages": ["English", "Spanish", "Italian","French", "Dutch", "Hebrew"],
     "downloadLinks": [
       {
         "id": 1,
@@ -3974,6 +3995,9 @@
     "numberOfEpisodes": "36",
     "imdbPage": "https://www.imdb.com/title/tt2442560/",
     "downloadPage": "https://dls2.iran-gamecenter-host.com/DonyayeSerial/series/Peaky.Blinders/Soft.Sub/",
+    "releaseDate": "September 30, 2014",
+    "countriesOfOrigin": ["United Kingdom"],
+    "languages": ["English", "Romanian", "Irish Gaelic", "Italian", "Yiddish", "French"],
     "downloadLinks": [
       {
         "id": 1,
@@ -4240,6 +4264,9 @@
     "numberOfEpisodes": "26",
     "imdbPage": "https://www.imdb.com/title/tt5753856/",
     "downloadPage": "https://dls2.iran-gamecenter-host.com/DonyayeSerial/series/Dark/Soft.Sub/",
+    "releaseDate": "December 1, 2017",
+    "countriesOfOrigin": ["Germany", "United States"],
+    "languages": ["German", "English", "German Sign Language"],
     "downloadLinks": [
       {
         "id": 1,
@@ -4438,6 +4465,9 @@
     "numberOfEpisodes": "12",
     "imdbPage": "https://www.imdb.com/title/tt5687612/",
     "downloadPage": "https://dls.iran-gamecenter-host.com/DonyayeSerial/series/Fleabag/Soft.Sub/",
+    "releaseDate": "September 16, 2016",
+    "countriesOfOrigin": ["United Kingdom"],
+    "languages": ["English"],
     "downloadLinks": [
       {
         "id": 1,
@@ -4560,6 +4590,9 @@
     "numberOfEpisodes": "27",
     "imdbPage": "https://www.imdb.com/title/tt2085059/",
     "downloadPage": "https://dls7.iran-gamecenter-host.com/DonyayeSerial/series2/tt2085059/SoftSub/",
+    "releaseDate": "December 4, 2011",
+    "countriesOfOrigin": ["United Kingdom"],
+    "languages": ["English"],
     "downloadLinks": [
       {
         "id": 1,
@@ -4781,6 +4814,9 @@
     "numberOfEpisodes": "103",
     "imdbPage": "https://www.imdb.com/title/tt1839578/",
     "downloadPage": "https://dls6.iran-gamecenter-host.com/DonyayeSerial/series/Person.of.Interest/Soft.Sub/",
+    "releaseDate": "September 22, 2011",
+    "countriesOfOrigin": ["United States"],
+    "languages": ["English"],
     "downloadLinks": [
       {
         "id": 1,
@@ -5371,6 +5407,9 @@
     "numberOfEpisodes": "45",
     "imdbPage": "https://www.imdb.com/title/tt4158110/",
     "downloadPage": "https://dls2.iran-gamecenter-host.com/DonyayeSerial/series/Mr.Robot/Soft.Sub/",
+    "releaseDate": "June 24, 2015",
+    "countriesOfOrigin": ["United States"],
+    "languages": ["English", "Swedish", "Danish", "Chinese", "Persian", "Spanish", "Samoan", "Arabic", "German"],
     "downloadLinks": [
       {
         "id": 1,
@@ -5670,6 +5709,9 @@
     "numberOfEpisodes": "89",
     "imdbPage": "https://www.imdb.com/title/tt2306299/",
     "downloadPage": "https://dls5.iran-gamecenter-host.com/DonyayeSerial/series/Vikings/Soft.Sub/",
+    "releaseDate": "March 3, 2013",
+    "countriesOfOrigin": ["Ireland", "Canada"],
+    "languages": ["English", "Old English", "Norse, Old", "Latin", "French", "Arabic", "Greek, Ancient (to 1453)", "Russian"],
     "downloadLinks": [
       {
         "id": 1,
@@ -6201,6 +6243,9 @@
     "numberOfEpisodes": "204",
     "imdbPage": "https://www.imdb.com/title/tt0285331/",
     "downloadPage": "https://dls2.iran-gamecenter-host.com/DonyayeSerial/series/24/Soft.Sub/",
+    "releaseDate": "November 6, 2001",
+    "countriesOfOrigin": ["United States"],
+    "languages": ["English", "Russian", "German", "Korean", "Arabic", "Spanish", "Serbian", "Mandarin"],
     "downloadLinks": [
       {
         "id": 1,
@@ -7345,6 +7390,9 @@
     "numberOfEpisodes": "36",
     "imdbPage": "https://www.imdb.com/title/tt0475784/",
     "downloadPage": "https://dls.iran-gamecenter-host.com/DonyayeSerial/series/Westworld/Soft.Sub/",
+    "releaseDate": "October 2, 2016",
+    "countriesOfOrigin": ["United States"],
+    "languages": ["English"],
     "downloadLinks": [
       {
         "id": 1,
@@ -7589,6 +7637,9 @@
     "numberOfEpisodes": "26",
     "imdbPage": "https://www.imdb.com/title/tt5675620/",
     "downloadPage": "https://dls2.iran-gamecenter-host.com/DonyayeSerial/series/The.Punisher/Soft.Sub/",
+    "releaseDate": "November 17, 2017",
+    "countriesOfOrigin": ["United States"],
+    "languages": ["English"],
     "downloadLinks": [
       {
         "id": 1,
@@ -7805,6 +7856,9 @@
     "numberOfEpisodes": "90",
     "imdbPage": "https://www.imdb.com/title/tt0455275/",
     "downloadPage": "https://dls2.iran-gamecenter-host.com/DonyayeSerial/series/Prison.Break/Soft.Sub/",
+    "releaseDate": "August 29, 2005",
+    "countriesOfOrigin": ["United States"],
+    "languages": ["English", "Spanish", "Arabic"],
     "downloadLinks": [
       {
         "id": 1,
@@ -8406,6 +8460,9 @@
     "numberOfEpisodes": "28",
     "imdbPage": "https://www.imdb.com/title/tt2699128/",
     "downloadPage": "https://dls5.iran-gamecenter-host.com/DonyayeSerial/series/The.Leftovers/Soft.Sub/",
+    "releaseDate": "June 29, 2014",
+    "countriesOfOrigin": ["United States"],
+    "languages": ["English"],
     "downloadLinks": [
       {
         "id": 1,
@@ -8624,6 +8681,9 @@
     "numberOfEpisodes": "48",
     "imdbPage": "https://www.imdb.com/title/tt6468322/",
     "downloadPage": "https://dls6.iran-gamecenter-host.com/DonyayeSerial/series/Money.Heist/Soft.Sub/",
+    "releaseDate": "May 2, 2017",
+    "countriesOfOrigin": ["Spain"],
+    "languages": ["Spanish", "Russian", "Serbian", "English"],
     "downloadLinks": [
       {
         "id": 1,
@@ -8939,6 +8999,9 @@
     "numberOfEpisodes": "175",
     "imdbPage": "https://www.imdb.com/title/tt1520211/",
     "downloadPage": "https://dls7.iran-gamecenter-host.com/DonyayeSerial/series2/tt1520211/SoftSub/",
+    "releaseDate": "October 31, 2010",
+    "countriesOfOrigin": ["United States"],
+    "languages": ["English"],
     "downloadLinks": [
       {
         "id": 1,
@@ -9945,6 +10008,9 @@
     "numberOfEpisodes": "218",
     "imdbPage": "https://www.imdb.com/title/tt2741602/",
     "downloadPage": "https://dls7.iran-gamecenter-host.com/DonyayeSerial/series2/tt2741602/SoftSub/",
+    "releaseDate": "September 23, 2013",
+    "countriesOfOrigin": ["United States"],
+    "languages": ["English"],
     "downloadLinks": [
       {
         "id": 1,
@@ -11135,6 +11201,9 @@
     "numberOfEpisodes": "39",
     "imdbPage": "https://www.imdb.com/title/tt2357547/",
     "downloadPage": "https://dls6.iran-gamecenter-host.com/DonyayeSerial/series/Jessica.Jones/Soft.Sub/",
+    "releaseDate": "November 20, 2015",
+    "countriesOfOrigin": ["United States"],
+    "languages": ["English"],
     "downloadLinks": [
       {
         "id": 1,
@@ -11403,6 +11472,9 @@
     "numberOfEpisodes": "27",
     "imdbPage": "https://www.imdb.com/title/tt2628232/",
     "downloadPage": "https://dls.iran-gamecenter-host.com/DonyayeSerial/series/Penny.Dreadful/Soft.Sub/",
+    "releaseDate": "April 28, 2014",
+    "countriesOfOrigin": ["United Kingdom", "United States"],
+    "languages": ["English"],
     "downloadLinks": [
       {
         "id": 1,
