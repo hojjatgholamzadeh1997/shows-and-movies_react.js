@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "name": "the-shawshank-redemption",
+    "title": "The Shawshank Redemption",
+    "image": "https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/assets/images/movies/the-shawshank-redemption.jpg",
+    "summary": "A banker convicted of uxoricide forms a friendship over a quarter century with a hardened convict, while maintaining his innocence and trying to remain hopeful through simple compassion.",
+    "genres": ["Drama"],
+    "directors": ["Frank Darabont"],
+    "casts": [
+      {
+        "id": 1,
+        "name": "Tim Robbins",
+        "image": "https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/assets/images/movies/more-images/the-shawshank-redemption/tim-robbins.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Morgan Freeman",
+        "image": "https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/assets/images/movies/more-images/the-shawshank-redemption/morgan-freeman.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Bob Gunton",
+        "image": "https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/assets/images/movies/more-images/the-shawshank-redemption/bob-gunton.jpg"
+      },
+      {
+        "id": 4,
+        "name": "William Sadler",
+        "image": "https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/assets/images/movies/more-images/the-shawshank-redemption/william-sadler.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Clancy Brown",
+        "image": "https://raw.githubusercontent.com/hojjatgholamzadeh1997/shows-and-movies_react.js/refs/heads/main/src/assets/images/movies/more-images/the-shawshank-redemption/clancy-brown.jpg"
+      }
+    ],
+    "releaseYear": "1994",
+    "ageRating": "R",
+    "imdbRating": "9.3/10",
+    "imdbPage": "https://www.imdb.com/title/tt0111161/",
+    "downloadLink": "https://dls7.iran-gamecenter-host.com/DonyayeSerial/movies/1994/tt0111161/SoftSub/The.Shawshank.Redemption.1994.720p.BluRay.SoftSub.Ganool.DonyayeSerial.mkv",
+    "releaseDate": "October 14, 1994",
+    "countriesOfOrigin": ["United States"],
+    "languages": ["English"]
+  }
+]
