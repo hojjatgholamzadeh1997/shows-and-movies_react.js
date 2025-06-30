@@ -29,8 +29,6 @@ function Header() {
             <Offcanvas.Body className="justify-content-center align-items-center">
               <Nav>
                 <NavLink className="nav-link" to="/">Home</NavLink>
-                <NavLink className="nav-link" to="/about">About</NavLink>
-                <NavLink className="nav-link" to="/contact">Contact</NavLink>
                 <NavLink className="nav-link" to="/shows">Shows</NavLink>
                 <NavLink className="nav-link" to="/movies">Movies</NavLink>
               </Nav>
